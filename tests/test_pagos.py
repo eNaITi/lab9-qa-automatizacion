@@ -3,15 +3,13 @@
 # RESPUESTAS A LAS PREGUNTAS DE LA TAREA:
 #
 # f) ¿Por qué es incorrecto usar la PasarelaPago real en los tests automáticos?
-#    Porque realizaría cobros reales cada vez que se ejecute la suite, generando
-#    transacciones falsas, costos económicos y dependencia de una red/servicio externo.
+#    Porque realizaría cobros reales cada vez que se ejecute la suite, generando transacciones falsas, costos económicos y dependencia de una red/servicio externo.
 #    Los tests deben ser rápidos, aislados y repetibles sin efectos secundarios.
 #
 # g) ¿Qué diferencia existe entre un Stub y un Mock?
 #    Un Stub solo devuelve respuestas predefinidas (simula el comportamiento).
 #    Un Mock además verifica que fue llamado con los argumentos correctos.
-#    En test_pago_exitoso_retorna_txn_id usamos el MagicMock como STUB,
-#    porque solo nos importa la respuesta, no verificamos cómo fue llamado.
+#    En test_pago_exitoso_retorna_txn_id usamos el MagicMock como STUB, porque solo nos importa la respuesta, no verificamos cómo fue llamado.
 
 import pytest
 from unittest.mock import MagicMock

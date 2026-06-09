@@ -4,17 +4,17 @@ Resultados de Cobertura
 - `app/carrito.py`: 100%
 - `app/descuentos.py`: 100%
 - `app/pagos.py`: 100%
-- **Total: 100%**
+- `Total: 100`
 
 
 
 Respuestas a las Preguntas
 
-k) ¿Qué líneas quedaron sin cubrir al ejecutar el primer reporte? ¿Por qué?
+**¿Qué líneas quedaron sin cubrir al ejecutar el primer reporte? ¿Por qué?**
 
 En el primer reporte quedaron sin cubrir:
 - "carrito.py línea 11": el raise ValueError para precio negativo. No existía un test que intentara agregar un producto con precio negativo.
-- **pagos.py línea 15**: el raise ValueError para monto <= 0. No existía un test que intentara procesar un pago con monto cero o negativo.
+- "pagos.py línea 15": el raise ValueError para monto <= 0. No existía un test que intentara procesar un pago con monto cero o negativo.
 
 Ambas líneas corresponden a validaciones de casos borde que no fueron
 consideradas en los tests iniciales. Se corrigió agregando un test específico
@@ -22,7 +22,7 @@ para cada caso.
 
 
 
-l) ¿Significa cobertura 100% que el software no tiene bugs? Justifica con un ejemplo concreto del laboratorio.
+**¿Significa cobertura 100% que el software no tiene bugs? Justifica con un ejemplo concreto del laboratorio.**
 
 No. La cobertura 100% solo garantiza que cada línea fue ejecutada al menos una vez, pero no garantiza que todos los comportamientos posibles sean correctos.
 
@@ -31,7 +31,7 @@ La cobertura mide qué código se ejecuta, no si el resultado es correcto.
 
 
 
-o) ¿Cuál fue la severidad que asignaste a cada bug? Justifica tu decisión.
+**¿Cuál fue la severidad que asignaste a cada bug? Justifica tu decisión.**
 
 - "BUG-LAB9-001" (fórmula incorrecta): Severidad HIGH.
   Afecta directamente el cálculo del precio final que paga el cliente.
@@ -42,7 +42,7 @@ o) ¿Cuál fue la severidad que asignaste a cada bug? Justifica tu decisión.
 
 
 
-p) ¿En qué se diferencia la severidad de la prioridad? Da un ejemplo donde ambas sean distintas.
+**¿En qué se diferencia la severidad de la prioridad? Da un ejemplo donde ambas sean distintas.**
 
 - Severidad es el impacto técnico del bug en el sistema (cuánto daño causa).
 - Prioridad es la urgencia de negocio para corregirlo (cuándo debe corregirse).
